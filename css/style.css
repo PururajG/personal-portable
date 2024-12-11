@@ -1228,7 +1228,7 @@
  }
 
  .form-control {
-   border: 1px solid #e9ecef;
+   border: 1px solid #bfbfbf;
    font-size: 14px !important;
    line-height: 30px;
    text-align: left;
@@ -1238,7 +1238,7 @@
  .form-control:focus {
    -webkit-box-shadow: none !important;
    box-shadow: none !important;
-   border-color: #f75023 !important;
+   border-color: #999999 !important; 
  }
 
  /************************************/
@@ -1402,6 +1402,19 @@
    .navbar .navbar-nav .nav-item.active .nav-link {
      color: #f75023;
    }
+
+
+   .services-section .active {
+     transform: translateY(0px);
+     transition: all 0.3s;
+     background: #ffffff;
+     color: #000000;
+   }
+
+   .services-section .active p {
+     color: rgb(0, 0, 0) !important;
+   }
+
  }
 
  /*********************************/
@@ -1441,8 +1454,8 @@
    }
  }
 
- .bg-half-170 {
-   padding: 170px 0;
+ .bg-half-100 {
+   padding: 100px 0;
    background-size: cover !important;
    -ms-flex-item-align: center;
    -ms-grid-row-align: center;
@@ -1452,7 +1465,7 @@
  }
 
  @media (max-width: 767px) {
-   .bg-half-170 {
+   .bg-half-100 {
      padding: 120px 0 !important;
      height: auto;
    }
@@ -1977,6 +1990,11 @@
    border-radius: 30px;
  }
 
+ .email-text-wrap {
+   word-break: break-all;
+ }
+
+
  .about-tab-section .about-tab .about-tab-pills .custom-nav-item {
    -ms-flex-preferred-size: 0;
    flex-basis: 0;
@@ -2219,15 +2237,16 @@
    color: #f75023 !important;
  }
 
- .services-section  .active{
-  transform: translateY(-15px);
+ .services-section .active {
+   transform: translateY(-15px);
    transition: all 0.3s;
    background: #ff7b57;
-   color: white ;
+   color: white;
 
  }
- .services-section  .active p{
-  color: white !important;
+
+ .services-section .active p {
+   color: white !important;
  }
 
  .services-section .service-box {
@@ -2249,10 +2268,7 @@
    color: #ffffff !important;
  }
 
-
- .services-section .icon-img img {
-   width: 50px;
- }
+ 
 
  .services-section span {
    font-size: 16px;
@@ -2284,7 +2300,7 @@
  }
 
  .services-section a:hover {
-   color: #f75023 !important;
+   color: #555555 !important;
    -webkit-transition: all 1s;
    transition: all 1s;
  }
@@ -2553,6 +2569,12 @@
    background-color: #1a1a1a;
  }
 
+ .footer-img img {
+   width: 125px;
+   height: auto;
+   object-fit: contain;
+ }
+
  .footer-section .footer-title {
    font-weight: 500 !important;
    font-size: 21 !important;
@@ -2619,7 +2641,7 @@
  .footer-section .subscribe .form-group .form-control:focus {
    -webkit-box-shadow: none !important;
    box-shadow: none !important;
-   border: 1px solid #f75023;
+   border: 1px solid #999999 ;
  }
 
  .footer-section .subscribe .form-group .form-control::-webkit-input-placeholder {
